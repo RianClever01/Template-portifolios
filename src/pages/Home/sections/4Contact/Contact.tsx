@@ -7,6 +7,8 @@ import AnimBox from "../../../../Components/AnimBox/AnimBox";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
+import { portifolioData } from "c:/Users/priscilia/Desktop/Projetos/Portifolios/Portifolio-template/src/data/portifolioData";
+
 
 
 const Contact = () => (
@@ -124,13 +126,15 @@ const Contact = () => (
                             Minhas redes sociais:
                         </Typography>
                         <Box sx={{ display: "flex", gap: 3, alignItems: "center" }} >
-                            <Tooltip title="@quelbjj">
-                                <IconButton href="https://www.instagram.com/quelbjj/" sx={{
+                            <Tooltip title={portifolioData.contact.socialMedia[0].shortMsg}>
+                                <IconButton href={portifolioData.contact.socialMedia[0].link} sx={{
                                     background: "linear-gradient(to right, #833ab4, #fd1d1d, #fcb045)",
                                     width: 48,
                                     height: 48,
                                     borderRadius: "50%",
                                 }}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <InstagramIcon sx={{ "&:hover": { color: "text.secondary" } }} />
                                 </IconButton>
@@ -142,6 +146,8 @@ const Contact = () => (
                                     height: 48,
                                     borderRadius: "50%",
                                 }}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <WhatsAppIcon sx={{ "&:hover": { color: "text.secondary" } }} />
                                 </IconButton>
@@ -153,12 +159,14 @@ const Contact = () => (
                                     height: 48,
                                     borderRadius: "50%",
                                 }}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <MarkEmailReadIcon sx={{ "&:hover": { color: "text.secondary" } }} />
                                 </IconButton>
                             </Tooltip>
                         </Box>
-                        <Typography sx={{ "&:hover": { color: "text.secondary", textDecorationLine: "underline" }, transform:"translateY(10px)" }} >
+                        <Typography sx={{ "&:hover": { color: "text.secondary", textDecorationLine: "underline" }, transform: "translateY(10px)" }} >
                             Minha empresária
                         </Typography>
                         <Box sx={{ display: "flex", gap: 3, alignItems: "center", transform: "translateY(10px)" }}>
@@ -169,17 +177,21 @@ const Contact = () => (
                                     height: 48,
                                     borderRadius: "50%",
                                 }}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <InstagramIcon sx={{ "&:hover": { color: "text.secondary" } }} />
                                 </IconButton>
                             </Tooltip>
                             <Tooltip title="Fone/Whatsapp">
                                 <IconButton href="https://wa.me/5583998147443?text=Oi,%20vim%20pelo%20portfólio%20da%20sua%20atleta%20Raquel" sx={{
-                                    background: "#5BED53",
+                                    background: "linear-gradient(to right, #00ff40, #2caa12, #00000071)",
                                     width: 48,
                                     height: 48,
                                     borderRadius: "50%",
                                 }}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <WhatsAppIcon sx={{ "&:hover": { color: "text.secondary" } }} />
                                 </IconButton>
@@ -191,6 +203,8 @@ const Contact = () => (
                                     height: 48,
                                     borderRadius: "50%",
                                 }}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <MarkEmailReadIcon sx={{ "&:hover": { color: "text.secondary" } }} />
                                 </IconButton>

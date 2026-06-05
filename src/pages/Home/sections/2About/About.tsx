@@ -1,11 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import TimelineIcon from '@mui/icons-material/Timeline';
-import sulamerican from "../../../../assets/images/sulamerican.jpg";
 import Section from "../../../../Components/Section/Section";
 import AnimBox from "../../../../Components/AnimBox/AnimBox";
 import MeuBotao from "../../../../Components/Button/Button";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import {portifolioData} from "c:/Users/priscilia/Desktop/Projetos/Portifolios/Portifolio-template/src/data/portifolioData";
 
 const About = () => {
   return (
@@ -38,7 +38,7 @@ const About = () => {
           >
             <Box
               component="img"
-              src={sulamerican}
+              src={portifolioData.about.mainPhoto}
               alt="Raquel Laís"
               sx={{
                 width: { xs: "65%", sm: "45%", md: "100%" },
@@ -81,27 +81,10 @@ const About = () => {
                   textAlign: { xs: "justify", md: "justify" },
                   fontSize: { xs: "0.95rem", md: "1rem" },
                   lineHeight: 1.7,
+                  whiteSpace: "pre-line"
                 }}
               >
-                Sou Raquel Laís, atleta de Jiu-Jitsu apaixonada pelo esporte,
-                pela disciplina e por tudo aquilo que o universo das artes
-                marciais representa. Minha trajetória começou através da vontade
-                de superar limites, desenvolver confiança e encontrar no esporte
-                uma forma de crescimento pessoal e profissional.
-                <br />
-                <br />
-                Desde então, o Jiu-Jitsu passou a fazer parte da minha vida de
-                maneira intensa, moldando não apenas a atleta que sou hoje, mas
-                também a pessoa que venho me tornando diariamente. Ao longo da
-                minha caminhada, participei de campeonatos, desafios e
-                experiências que contribuíram para minha evolução dentro e fora
-                dos tatames.
-                <br />
-                <br />
-                Mais do que medalhas e títulos, acredito que o esporte ensina
-                valores fundamentais como respeito, humildade, foco, disciplina
-                e resiliência, princípios que levo comigo em todas as áreas da
-                minha vida.
+                {portifolioData.about.text}
               </Typography>
             </AnimBox>
             

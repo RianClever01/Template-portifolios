@@ -1,11 +1,11 @@
 import { Box, Typography} from "@mui/material";
 import Grid from "@mui/material/Grid"
-import quelCostas from "../../../../assets/images/quelCostas.jpg";
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import Face4Icon from '@mui/icons-material/Face4';
 import Section from "../../../../Components/Section/Section";
 import TimelineIcon from '@mui/icons-material/Timeline';
 import MeuBotao from "../../../../Components/Button/Button";
+import {portifolioData} from "c:/Users/priscilia/Desktop/Projetos/Portifolios/Portifolio-template/src/data/portifolioData"
 
 
 
@@ -29,8 +29,8 @@ const Hero = () => {
 
                         <Box
                             component="img"
-                            src={quelCostas}
-                            alt="Raquel Laís"
+                            src={portifolioData.mainInfo.mainPhoto}
+                            alt={portifolioData.mainInfo.name}
                             sx={{
                                 width: '100%',
                                 maxWidth: 420,
@@ -72,10 +72,10 @@ const Hero = () => {
 
                             }}>
                             <Typography variant="h1" sx={{ mb: 1,  xs: "2rem", md: "4rem" }}>
-                                Raquel Laís
+                                {portifolioData.mainInfo.name}
                             </Typography>
                             <Typography variant="h2">
-                                Atleta multicampeã de Jiu Jitsu
+                                {portifolioData.mainInfo.subtitle}
                             </Typography>
 
                             <Box sx={{
@@ -111,7 +111,7 @@ const Hero = () => {
                                 },
                                 maxWidth: '95%'
                             }}>
-                            "Guarda-me como à menina dos teus olhos. Esconde-me, à sombra das tuas asas"
+                            {portifolioData.mainInfo.footer}
                         </Typography>
                     </Grid>
 

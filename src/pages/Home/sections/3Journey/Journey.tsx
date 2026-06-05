@@ -7,7 +7,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
-import { journeyYears } from "./journeyData"
+import { journeyYears } from "../../../../data/journeyData"
 import { useState } from "react"
 
 

@@ -7,7 +7,7 @@ import AnimBox from "../../../../Components/AnimBox/AnimBox";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
-import { portifolioData } from "c:/Users/priscilia/Desktop/Projetos/Portifolios/Portifolio-template/src/data/portifolioData";
+import { portifolioData } from "../../../../data/portifolioData"
 
 
 

@@ -5,8 +5,7 @@ import Face4Icon from '@mui/icons-material/Face4';
 import Section from "../../../../Components/Section/Section";
 import TimelineIcon from '@mui/icons-material/Timeline';
 import MeuBotao from "../../../../Components/Button/Button";
-import {portifolioData} from "c:/Users/priscilia/Desktop/Projetos/Portifolios/Portifolio-template/src/data/portifolioData"
-
+import { portifolioData } from "../../../../data/portifolioData"
 
 
 

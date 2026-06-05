@@ -5,8 +5,7 @@ import Section from "../../../../Components/Section/Section";
 import AnimBox from "../../../../Components/AnimBox/AnimBox";
 import MeuBotao from "../../../../Components/Button/Button";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import {portifolioData} from "c:/Users/priscilia/Desktop/Projetos/Portifolios/Portifolio-template/src/data/portifolioData";
-
+import { portifolioData } from "../../../../data/portifolioData"
 const About = () => {
   return (
     <Section
